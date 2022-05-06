@@ -2,11 +2,22 @@
 
 namespace Average
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] arr = new int[] { 1, 2, 3, 4, 5, 6, };
+
+            double average = Average.AverageArr(arr);
+
+            if (average == 3.5)
+            {
+                Console.WriteLine("TEST PASS");
+            }
+            else
+            {
+                Console.WriteLine("TEST FAIL");
+            }
         }
     }
 }
